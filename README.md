@@ -24,8 +24,6 @@ Cons:
 * A cache is an area of local memory that holds a copy of frequently accessed data that is otherwise expensive to get or compute. Examples: result of a query to a database, disk file or a report.
 * Consider simple implementation instead of using external libraries
 
-## Enums
-
 ## Optionals
 * Wrapper
 * Null-references have been historically introduced in programming languages to generally signal the absence of a value.

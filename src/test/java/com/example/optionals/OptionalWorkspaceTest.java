@@ -1,18 +1,14 @@
 package com.example.optionals;
 
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 class OptionalWorkspaceTest {
 
-    static OptionalWorkspace sut;
+    OptionalWorkspace sut = new OptionalWorkspace();
 
-    @BeforeAll
-    public static void setUp() {
-        sut = new OptionalWorkspace();
-    }
     @Test
     void shouldGetCarInsuranceNameForGivenDriver() {
 
@@ -42,7 +38,7 @@ class OptionalWorkspaceTest {
         insurance.setName("Link4");
         car.setInsurance(insurance);
         person.setCar(car);
-        assertEquals("Link4", sut.getCarInsuranceName(person));
+        assertEquals("Link4", sut.getCarInsuranceNameWithOptional(person));
     }
 
 }
