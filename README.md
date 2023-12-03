@@ -21,9 +21,14 @@ Cons:
 * They require separate object for each distinct value (memory consumption)
 
 ## In memory cache
+* A cache is an area of local memory that holds a copy of frequently accessed data that is otherwise expensive to get or compute. Examples: result of a query to a database, disk file or a report.
+* Consider simple implementation instead of using external libraries
 
 ## Enums
 
 ## Optionals
-
-
+* Wrapper
+* Null-references have been historically introduced in programming languages to generally signal the absence of a value.
+* Java 8 introduces the class java.util.Optional<T> to model the presence or absence of a value.
+* You can create Optional objects with the static factory methods **Optional.empty**, **Optional.of**, and **Optional.ofNullable**.
+* Using Optional can help you design better APIs in which, just by reading the signature of a method, users can tell whether to expect an optional value.
