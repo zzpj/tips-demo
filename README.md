@@ -1,2 +1,2 @@
-# tips-demo
-This is a demo for bigger java tipps initiatives
+# Java is not dead YET!
+Watch me for more
