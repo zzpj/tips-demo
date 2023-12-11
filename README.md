@@ -30,3 +30,14 @@ Cons:
 * Java 8 introduces the class java.util.Optional<T> to model the presence or absence of a value.
 * You can create Optional objects with the static factory methods **Optional.empty**, **Optional.of**, and **Optional.ofNullable**.
 * Using Optional can help you design better APIs in which, just by reading the signature of a method, users can tell whether to expect an optional value.
+
+## Reflection
+* Reflection API is debate-able within the Java community and is sometimes seen as a bad practice.
+* Reflection is the ability of a process to examine, introspect, and modify its structure and behavior.
+* **Prons**:
+  * empowers dynamic programming, enhancing an application’s flexibility and adaptability (Spring framework uses reflection for creating and configuring beans)
+  * extensibility which enables incorporate new functionalities or modules at runtime, without changing the application’s core code
+* **Cons**:
+  * dynamically resolves types and may limit certain JVM optimizations
+  * permits operations that might be restricted in non-reflective code and decrease code maintainability
+  * the loss of compile-time safety
