@@ -16,11 +16,12 @@ public class ShapeRunner {
     }
 
 
-    //JEP 406 Pattern Matching for Switch
+    // JDK 21
     private String checkObject(Object obj) {
         return switch (obj) {
             case Human h -> "Name: %s, age: %s and profession: %s".formatted(h.name(), h.age(), h.profession());
-            case Circle c -> "This is a circle";
+            case Circle c when c.getNumberOfSides() == 0 -> "This is a circle";
+            case Circle c when c.getNumberOfSides() == 4 -> "This is weird circle that is remaining square...";
             case Triangle t -> "It is a triangle";
             case null -> "It is null";
             default -> "It is an object";
